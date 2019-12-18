@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323232"
+    tools:context=".Menu"
+    android:screenOrientation="portrait">
+
+    <Button
+        android:id="@+id/combo1Btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="72dp"
+        android:width="143dp"
+        android:height="143dp"
+        android:background="@drawable/shape"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="@string/combo_1"
+        android:textColor="#FFBF00"
+        android:textSize="24sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/desordenBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordenBtn" />
+
+    <Button
+        android:id="@+id/combo2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="72dp"
+        android:width="143dp"
+        android:height="143dp"
+        android:background="@drawable/shape"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="@string/combo_2"
+        android:textColor="#FFBF00"
+        android:textSize="24sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/combo1Btn2"
+        app:layout_constraintTop_toBottomOf="@+id/desordenBtn" />
+
+    <Button
+        android:id="@+id/desordenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="77dp"
+
+        android:width="143dp"
+        android:height="143dp"
+        android:background="@drawable/shape"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="@string/desorden"
+        android:textColor="#FFBF00"
+        android:textSize="24sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintStart_toEndOf="@+id/ordenBtn"
+        app:layout_constraintTop_toBottomOf="@+id/treslogo" />
+
+    <ImageView
+        android:id="@+id/treslogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tresmonazos" />
+
+    <Button
+        android:id="@+id/ordenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="77dp"
+
+        android:layout_marginEnd="62dp"
+        android:width="143dp"
+        android:height="143dp"
+        android:background="@drawable/shape"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="@string/orden"
+        android:textColor="#FFBF00"
+        android:textSize="24sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/desordenBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treslogo" />
+
+    <LinearLayout
+        android:id="@+id/infoTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treslogo"
+        android:screenOrientation="portrait">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFBF00"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/infoTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFBF00"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/descriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFBF00"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:background="@drawable/shape"
+            android:text="@string/jugar"
+            android:textColor="#FFBF00" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">tresmonazos</string>
+    <string name="age_verification">Age Verification</string>
+    <string name="you_must_be_18_yo_to_enter_this_site">You must be +18 yo to enter this site</string>
+    <string name="logo">logo</string>
+    <string name="verify_your_age">Verify your age</string>
+    <string name="monkey">monkey</string>
+    <string name="combo_1">Combo 1</string>
+    <string name="combo_2">Combo 2</string>
+    <string name="desorden">Desorden</string>
+    <string name="orden">Orden</string>
+    <string name="jugar">Jugar</string>
+</resources>
